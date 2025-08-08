@@ -30,10 +30,13 @@
 }
 
 .header {
-  background-image: url(/img/backroumd-img.png);
-  background-repeat: no-repeat;
+  background-image: url(/img/desk-header.png);
+  background-position: center;
+  width: 100%;
   height: 540px;
-  width: 320px;
+  max-width: 320px;
+  min-width: 100%;
+  display: block;
 }
 .header__item {
   display: flex;
@@ -86,18 +89,14 @@
   .header__list {
     justify-content: end;
   }
-  .header {
-    background-image: url(/img/tablet-header.png);
-    width: 768px;
-  }
   .header__button-sign-up {
     margin-right: 50px;
   }
   .header__pretitle {
     margin: 0;
-    position: absolute;
-    bottom: 488px;
-    right: 536px;
+    position: relative;
+    top: 45px;
+    left: 49px;
     font-weight: bold;
     font-family: Montserrat;
   }
@@ -124,11 +123,6 @@
   }
 }
 @media (min-width: 1442px) {
-  .header {
-    background-image: url(/img/desk-header.png);
-    width: 1442px;
-    height: 700px;
-  }
   .header__subtitle {
     margin-top: 53px;
     font-size: 24px;
@@ -151,7 +145,10 @@
     padding: 0 15px;
   }
   .header__list {
-    margin-right: 251px;
+    margin-right: 232px;
+  }
+  .header__pretitle {
+    margin-left: 249px;
   }
 }
 .partners__title {
